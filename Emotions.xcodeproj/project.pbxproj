@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49221234AF21BF2E757773BD /* Pods_Emotions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94672A571F8A93FA004C3B6B /* Pods_Emotions.framework */; };
+		9450C1141F97E6B30081927C /* CNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9450C1131F97E6800081927C /* CNN.mlmodel */; };
+		9453DE371F4452B2008C4AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453DE361F4452B2008C4AFA /* AppDelegate.swift */; };
+		9453DE391F4452B2008C4AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453DE381F4452B2008C4AFA /* ViewController.swift */; };
+		9453DE3C1F4452B2008C4AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9453DE3A1F4452B2008C4AFA /* Main.storyboard */; };
+		9453DE3E1F4452B2008C4AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9453DE3D1F4452B2008C4AFA /* Assets.xcassets */; };
+		9453DE411F4452B2008C4AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9453DE3F1F4452B2008C4AFA /* LaunchScreen.storyboard */; };
+		9453DE4C1F4452B2008C4AFA /* EmotionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453DE4B1F4452B2008C4AFA /* EmotionsTests.swift */; };
+		9453DE571F4452B2008C4AFA /* EmotionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9453DE561F4452B2008C4AFA /* EmotionsUITests.swift */; };
+		94E431AB1F9BCC1800676F6B /* ModelPredict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E431AA1F9BCC1700676F6B /* ModelPredict.swift */; };
+		94FF3FAA1FCCABCD001AF2BB /* RNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 94FF3FA91FCCABC9001AF2BB /* RNN.mlmodel */; };
+		E9841CF9EB555ECDD90B3965 /* Pods_Emotions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1F433454241432B5BF94A8 /* Pods_Emotions.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9453DE481F4452B2008C4AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9453DE2B1F4452B2008C4AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9453DE321F4452B2008C4AFA;
+			remoteInfo = Emotions;
+		};
+		9453DE531F4452B2008C4AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9453DE2B1F4452B2008C4AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9453DE321F4452B2008C4AFA;
+			remoteInfo = Emotions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9450C1131F97E6800081927C /* CNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CNN.mlmodel; sourceTree = "<group>"; };
+		9453DE331F4452B2008C4AFA /* Emotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emotions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9453DE361F4452B2008C4AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9453DE381F4452B2008C4AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9453DE3B1F4452B2008C4AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9453DE3D1F4452B2008C4AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9453DE401F4452B2008C4AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9453DE421F4452B2008C4AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9453DE471F4452B2008C4AFA /* EmotionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9453DE4B1F4452B2008C4AFA /* EmotionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsTests.swift; sourceTree = "<group>"; };
+		9453DE4D1F4452B2008C4AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9453DE521F4452B2008C4AFA /* EmotionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9453DE561F4452B2008C4AFA /* EmotionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsUITests.swift; sourceTree = "<group>"; };
+		9453DE581F4452B2008C4AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94672A571F8A93FA004C3B6B /* Pods_Emotions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Emotions.framework; sourceTree = "<group>"; };
+		94E431AA1F9BCC1700676F6B /* ModelPredict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPredict.swift; sourceTree = "<group>"; };
+		94FF3FA81FCB1C23001AF2BB /* RNNtest.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = RNNtest.mlmodel; path = ../../EmotionsPythonModels/RNNtest.mlmodel; sourceTree = "<group>"; };
+		94FF3FA91FCCABC9001AF2BB /* RNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RNN.mlmodel; sourceTree = "<group>"; };
+		9C1F433454241432B5BF94A8 /* Pods_Emotions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emotions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F33DEE842C09A785FB4A4E /* Pods-Emotions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotions.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emotions/Pods-Emotions.release.xcconfig"; sourceTree = "<group>"; };
+		DFCE28D854ED9D69141226E0 /* Pods-Emotions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emotions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emotions/Pods-Emotions.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9453DE301F4452B2008C4AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9841CF9EB555ECDD90B3965 /* Pods_Emotions.framework in Frameworks */,
+				49221234AF21BF2E757773BD /* Pods_Emotions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9453DE441F4452B2008C4AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9453DE4F1F4452B2008C4AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AC1F6E3F8DBDB60EF6B1F9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFCE28D854ED9D69141226E0 /* Pods-Emotions.debug.xcconfig */,
+				B0F33DEE842C09A785FB4A4E /* Pods-Emotions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D0A82890734E672DD11B844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94672A571F8A93FA004C3B6B /* Pods_Emotions.framework */,
+				9C1F433454241432B5BF94A8 /* Pods_Emotions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9453DE2A1F4452B2008C4AFA = {
+			isa = PBXGroup;
+			children = (
+				949113DD1F97E15F00BE0AFD /* Models */,
+				9453DE351F4452B2008C4AFA /* Emotions */,
+				9453DE4A1F4452B2008C4AFA /* EmotionsTests */,
+				9453DE551F4452B2008C4AFA /* EmotionsUITests */,
+				9453DE341F4452B2008C4AFA /* Products */,
+				2AC1F6E3F8DBDB60EF6B1F9A /* Pods */,
+				8D0A82890734E672DD11B844 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9453DE341F4452B2008C4AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9453DE331F4452B2008C4AFA /* Emotions.app */,
+				9453DE471F4452B2008C4AFA /* EmotionsTests.xctest */,
+				9453DE521F4452B2008C4AFA /* EmotionsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9453DE351F4452B2008C4AFA /* Emotions */ = {
+			isa = PBXGroup;
+			children = (
+				9453DE361F4452B2008C4AFA /* AppDelegate.swift */,
+				9453DE381F4452B2008C4AFA /* ViewController.swift */,
+				9453DE3A1F4452B2008C4AFA /* Main.storyboard */,
+				9453DE3D1F4452B2008C4AFA /* Assets.xcassets */,
+				94FF3FA81FCB1C23001AF2BB /* RNNtest.mlmodel */,
+				9453DE3F1F4452B2008C4AFA /* LaunchScreen.storyboard */,
+				9453DE421F4452B2008C4AFA /* Info.plist */,
+			);
+			path = Emotions;
+			sourceTree = "<group>";
+		};
+		9453DE4A1F4452B2008C4AFA /* EmotionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9453DE4B1F4452B2008C4AFA /* EmotionsTests.swift */,
+				9453DE4D1F4452B2008C4AFA /* Info.plist */,
+			);
+			path = EmotionsTests;
+			sourceTree = "<group>";
+		};
+		9453DE551F4452B2008C4AFA /* EmotionsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9453DE561F4452B2008C4AFA /* EmotionsUITests.swift */,
+				9453DE581F4452B2008C4AFA /* Info.plist */,
+			);
+			path = EmotionsUITests;
+			sourceTree = "<group>";
+		};
+		949113DD1F97E15F00BE0AFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9450C1131F97E6800081927C /* CNN.mlmodel */,
+				94FF3FA91FCCABC9001AF2BB /* RNN.mlmodel */,
+				94E431AA1F9BCC1700676F6B /* ModelPredict.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9453DE321F4452B2008C4AFA /* Emotions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9453DE5B1F4452B2008C4AFA /* Build configuration list for PBXNativeTarget "Emotions" */;
+			buildPhases = (
+				432437BBDD202AD147E66739 /* [CP] Check Pods Manifest.lock */,
+				9453DE2F1F4452B2008C4AFA /* Sources */,
+				9453DE301F4452B2008C4AFA /* Frameworks */,
+				9453DE311F4452B2008C4AFA /* Resources */,
+				4F344AF944A1433946927BCD /* [CP] Embed Pods Frameworks */,
+				FE8EE5448925AF525C7EC0D9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emotions;
+			productName = Emotions;
+			productReference = 9453DE331F4452B2008C4AFA /* Emotions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9453DE461F4452B2008C4AFA /* EmotionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9453DE5E1F4452B2008C4AFA /* Build configuration list for PBXNativeTarget "EmotionsTests" */;
+			buildPhases = (
+				9453DE431F4452B2008C4AFA /* Sources */,
+				9453DE441F4452B2008C4AFA /* Frameworks */,
+				9453DE451F4452B2008C4AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9453DE491F4452B2008C4AFA /* PBXTargetDependency */,
+			);
+			name = EmotionsTests;
+			productName = EmotionsTests;
+			productReference = 9453DE471F4452B2008C4AFA /* EmotionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9453DE511F4452B2008C4AFA /* EmotionsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9453DE611F4452B2008C4AFA /* Build configuration list for PBXNativeTarget "EmotionsUITests" */;
+			buildPhases = (
+				9453DE4E1F4452B2008C4AFA /* Sources */,
+				9453DE4F1F4452B2008C4AFA /* Frameworks */,
+				9453DE501F4452B2008C4AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9453DE541F4452B2008C4AFA /* PBXTargetDependency */,
+			);
+			name = EmotionsUITests;
+			productName = EmotionsUITests;
+			productReference = 9453DE521F4452B2008C4AFA /* EmotionsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9453DE2B1F4452B2008C4AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Denes Csizmadia";
+				TargetAttributes = {
+					9453DE321F4452B2008C4AFA = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					9453DE461F4452B2008C4AFA = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 9453DE321F4452B2008C4AFA;
+					};
+					9453DE511F4452B2008C4AFA = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 9453DE321F4452B2008C4AFA;
+					};
+				};
+			};
+			buildConfigurationList = 9453DE2E1F4452B2008C4AFA /* Build configuration list for PBXProject "Emotions" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9453DE2A1F4452B2008C4AFA;
+			productRefGroup = 9453DE341F4452B2008C4AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9453DE321F4452B2008C4AFA /* Emotions */,
+				9453DE461F4452B2008C4AFA /* EmotionsTests */,
+				9453DE511F4452B2008C4AFA /* EmotionsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9453DE311F4452B2008C4AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9453DE411F4452B2008C4AFA /* LaunchScreen.storyboard in Resources */,
+				9453DE3E1F4452B2008C4AFA /* Assets.xcassets in Resources */,
+				9453DE3C1F4452B2008C4AFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9453DE451F4452B2008C4AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9453DE501F4452B2008C4AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		432437BBDD202AD147E66739 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Emotions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F344AF944A1433946927BCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Emotions/Pods-Emotions-frameworks.sh",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKit.framework",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSiriWaveformView/SwiftSiriWaveformView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSiriWaveformView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emotions/Pods-Emotions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8EE5448925AF525C7EC0D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emotions/Pods-Emotions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9453DE2F1F4452B2008C4AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9453DE391F4452B2008C4AFA /* ViewController.swift in Sources */,
+				94E431AB1F9BCC1800676F6B /* ModelPredict.swift in Sources */,
+				9450C1141F97E6B30081927C /* CNN.mlmodel in Sources */,
+				9453DE371F4452B2008C4AFA /* AppDelegate.swift in Sources */,
+				94FF3FAA1FCCABCD001AF2BB /* RNN.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9453DE431F4452B2008C4AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9453DE4C1F4452B2008C4AFA /* EmotionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9453DE4E1F4452B2008C4AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9453DE571F4452B2008C4AFA /* EmotionsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9453DE491F4452B2008C4AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9453DE321F4452B2008C4AFA /* Emotions */;
+			targetProxy = 9453DE481F4452B2008C4AFA /* PBXContainerItemProxy */;
+		};
+		9453DE541F4452B2008C4AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9453DE321F4452B2008C4AFA /* Emotions */;
+			targetProxy = 9453DE531F4452B2008C4AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9453DE3A1F4452B2008C4AFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9453DE3B1F4452B2008C4AFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9453DE3F1F4452B2008C4AFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9453DE401F4452B2008C4AFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9453DE591F4452B2008C4AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9453DE5A1F4452B2008C4AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9453DE5C1F4452B2008C4AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFCE28D854ED9D69141226E0 /* Pods-Emotions.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AP33E9U3G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Emotions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Denes.Emotions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9453DE5D1F4452B2008C4AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F33DEE842C09A785FB4A4E /* Pods-Emotions.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4AP33E9U3G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Emotions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Denes.Emotions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9453DE5F1F4452B2008C4AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4AP33E9U3G;
+				INFOPLIST_FILE = EmotionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Denes.EmotionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emotions.app/Emotions";
+			};
+			name = Debug;
+		};
+		9453DE601F4452B2008C4AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4AP33E9U3G;
+				INFOPLIST_FILE = EmotionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Denes.EmotionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emotions.app/Emotions";
+			};
+			name = Release;
+		};
+		9453DE621F4452B2008C4AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4AP33E9U3G;
+				INFOPLIST_FILE = EmotionsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Denes.EmotionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Emotions;
+			};
+			name = Debug;
+		};
+		9453DE631F4452B2008C4AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4AP33E9U3G;
+				INFOPLIST_FILE = EmotionsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Denes.EmotionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Emotions;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9453DE2E1F4452B2008C4AFA /* Build configuration list for PBXProject "Emotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9453DE591F4452B2008C4AFA /* Debug */,
+				9453DE5A1F4452B2008C4AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9453DE5B1F4452B2008C4AFA /* Build configuration list for PBXNativeTarget "Emotions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9453DE5C1F4452B2008C4AFA /* Debug */,
+				9453DE5D1F4452B2008C4AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9453DE5E1F4452B2008C4AFA /* Build configuration list for PBXNativeTarget "EmotionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9453DE5F1F4452B2008C4AFA /* Debug */,
+				9453DE601F4452B2008C4AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9453DE611F4452B2008C4AFA /* Build configuration list for PBXNativeTarget "EmotionsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9453DE621F4452B2008C4AFA /* Debug */,
+				9453DE631F4452B2008C4AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9453DE2B1F4452B2008C4AFA /* Project object */;
+}
